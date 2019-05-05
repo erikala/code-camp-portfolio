@@ -1,3 +1,4 @@
+
 /* Header and top navigation bar */
 html {
   font-size: 16px;
@@ -34,7 +35,7 @@ a {
 
 header h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #38383a;
   margin: 0;
   padding-left: 10px;
@@ -43,15 +44,12 @@ header h1 {
 
 #nav-bar a {
 	padding: 10px 15px;
+  color: #4e4e4f;
+  font-size: 1.5rem;
 	text-transform: uppercase;
   font-weight: bolder;
 	text-align: center;
 	display: block;
-}
-
-#nav-bar a {
-	color: #4e4e4f;
-	font-size: 1.2rem;
 }
 
 #nav-bar a:hover {
@@ -66,7 +64,7 @@ header {
 	padding-bottom: .8rem;
 	border: 1px solid #a2a2a2;
 	background-color: #e0beb8;
-  max-height: 150px;
+  max-height: 170px;
 }
 
 /* Hero area */
@@ -84,26 +82,27 @@ header {
   margin-top: 100px;
 }
 
-.welcome-text {
-  width: 30%;
+#welcome-section .welcome-text {
+  width: 70%;
   color: #4e4e4f;
   display: flex;
-  justify-content: flex-start;
-  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-bottom: 200px;
 }
 
 #welcome-section h2 {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
-  padding-top: 50px;
-  padding-bottom: 10px;
+  font-size: 3rem;
+  padding-top: 10px;
   text-align: center;
 }
 
 #welcome-section p {
   padding-top: 10px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -241,14 +240,7 @@ footer .copyright {
 
 /* Media Queries */
 
-@media only screen and (min-width: 768) {
-   /*Tablet styles here*/
-
-.content-wrapper {
-    max-width: 640px;
-   margin: 100px 0;
-       }
-
+@media (min-width: 769px) {
 	header,
 	#nav-bar {
 		display: flex;
@@ -256,7 +248,7 @@ footer .copyright {
 	header {
 		flex-direction: column;
 		align-items: center;
-    	header{
+    	header {
 		width: 80%;
 		margin: 0 auto;
 		max-width: 1150px;
@@ -265,11 +257,36 @@ footer .copyright {
 
 }
 
-
 @media (min-width: 1025px) {
+
 	header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+  #welcome-section {
+    margin-top: 115px;
+  }
+
+  #welcome-section .welcome-text {
+    width: 80%;
+    color: #4e4e4f;
+    padding-bottom: 270px;
+    line-height: .5;
+  }
+
+  #welcome-section h2 {
+    font-size: 2.2rem;
+  }
+
+  #welcome-section p {
+    padding-top: 5px;
+    font-size: 1.1rem;
+  }
+
+  #nav-bar a {
+    font-size: 1.2rem;
+
+}
 
 }
