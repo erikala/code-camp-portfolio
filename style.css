@@ -120,16 +120,16 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  flex-basis: 50%;
+  flex-basis: 100%;
 
 }
 
 
 #projects h2 {
-  width: 70%;
+  width: 90%;
   padding: 20px 0;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 
@@ -148,14 +148,13 @@ header {
   width: 90%;
   height: auto;
   margin: 20px;
-  border: 2px solid #E2D6C0;
+  border: 3px solid #E2D6C0;
 }
 
 .show-more {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
   flex-basis: 100%;
   margin: 10px;
 }
@@ -171,14 +170,13 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-weight: bold;
   }
 
   .show-more a:hover {
   	color: #936c64;
   }
-
 
 
 /* footer & contact section */
@@ -196,13 +194,14 @@ footer {
 #contact h2 {
   text-align: center;
   padding-top: 10px;
+  font-size: 2rem;
 }
 
 #contact p {
   margin: 0;
   text-align: center;
   padding: 15px;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
 }
 
 #contact .content-wrapper {
@@ -259,10 +258,19 @@ footer .copyright {
 
 @media (min-width: 1025px) {
 
+  /*Header */
+
 	header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+  #nav-bar a {
+    font-size: 1.2rem;
+
+}
+
+  /*Welcome section */
 
   #welcome-section {
     margin-top: 115px;
@@ -284,9 +292,27 @@ footer .copyright {
     font-size: 1.1rem;
   }
 
-  #nav-bar a {
+/* Portfolio section */
+
+#projects h2 {
+  font-size: 1.5rem;
+}
+
+#projects .project-tile {
+  flex-basis: 50%;
+
+}
+
+.show-more p a {
     font-size: 1.2rem;
+  }
 
-}
+  /* Footer */
 
-}
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  #contact p {
+    font-size: 1.1rem;
+  }
