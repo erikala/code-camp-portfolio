@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-#nav-bar {
+# {
 	margin-top: 5px;
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@ header h1 {
 
 }
 
-#nav-bar a {
+#navbar a {
 	padding: 10px 15px;
   color: #4e4e4f;
   font-size: 1.5rem;
@@ -52,7 +52,7 @@ header h1 {
 	display: block;
 }
 
-#nav-bar a:hover {
+#navbar a:hover {
 	color: #936c64;
 }
 
@@ -92,7 +92,7 @@ header {
   padding-bottom: 200px;
 }
 
-#welcome-section h2 {
+#welcome-section h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
   padding-top: 10px;
@@ -206,33 +206,33 @@ footer {
 
 #contact .content-wrapper {
   width: 55%;
-  margin: 30px 0;
+  margin: 30px 30px;
 }
 
 #contact .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 15px;
 }
 
 #contact .social-icons p {
   background-color: #E2D6C0;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #contact .social-icons p i {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   color: #545556;
 }
 
 footer .copyright {
-  margin-top: 12px;
   text-align: center;
 }
 
@@ -241,7 +241,7 @@ footer .copyright {
 
 @media (min-width: 769px) {
 	header,
-	#nav-bar {
+	#navbar {
 		display: flex;
 	}
 	header {
@@ -265,7 +265,7 @@ footer .copyright {
 		justify-content: space-between;
 	}
 
-  #nav-bar a {
+  #navbar a {
     font-size: 1.2rem;
 
 }
@@ -283,7 +283,7 @@ footer .copyright {
     line-height: .5;
   }
 
-  #welcome-section h2 {
+  #welcome-section h1 {
     font-size: 2.2rem;
   }
 
@@ -316,3 +316,34 @@ footer .copyright {
   #contact p {
     font-size: 1.1rem;
   }
+
+  #contact .content-wrapper {
+    width: 55%;
+    margin: 15px 0;
+  }
+
+  #contact .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #contact .social-icons p {
+    background-color: #E2D6C0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact .social-icons p i {
+    font-size: 1.8rem;
+    color: #545556;
+  }
+
+}
